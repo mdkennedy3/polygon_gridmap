@@ -1,0 +1,8 @@
+<launch>
+   <node pkg="polygon_gridmap" type="polygon_to_grid_map" name="polygon_to_grid_map" respawn="false" output="screen" >
+     <param name="length" value="14.0"/>
+     <param name="width" value="6.0"/>
+     <param name="resolution" value="0.1"/>
+      <param name="yaml_file" value="$(find polygon_gridmap)/config/obstacle_polygons.yaml"/>
+   </node>
+</launch>
